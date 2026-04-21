@@ -1,0 +1,1772 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- PRIMARY SEO -->
+  <title>HMG Concepts | Virtual Education, EdTech & Data Solutions — Nigeria</title>
+  <meta name="description" content="HMG Concepts is a Nigerian educational and technology brand founded in 2015. We run HMG Academy (virtual schooling), HMG Technologies (EdTech & data solutions), and HMG Media. Led by educator and data scientist Adewale Samson Adeagbo." />
+  <meta name="keywords" content="HMG Concepts, HMG Academy Nigeria, virtual school Nigeria, online school Lagos, EdTech Nigeria, data science Nigeria, Adewale Samson Adeagbo, secondary school online Nigeria, virtual learning Nigeria" />
+  <meta name="author" content="Adewale Samson Adeagbo" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://hmgconcepts.pages.dev/" />
+
+  <!-- OPEN GRAPH -->
+  <meta property="og:title" content="HMG Concepts | Virtual Education & EdTech — Nigeria" />
+  <meta property="og:description" content="Virtual schooling, EdTech solutions, and data-driven education from Lagos, Nigeria. Founded 2015 by Adewale Samson Adeagbo." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://hmgconcepts.pages.dev/" />
+  <meta property="og:locale" content="en_NG" />
+
+  <!-- SCHEMA MARKUP -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "EducationalOrganization",
+    "name": "HMG Concepts",
+    "alternateName": "His Marvellous Grace Educational Consult",
+    "url": "https://hmgconcepts.pages.dev",
+    "foundingDate": "2015",
+    "description": "Nigerian educational and technology brand offering virtual schooling, EdTech solutions, and data-driven education tools.",
+    "founder": {
+      "@type": "Person",
+      "name": "Adewale Samson Adeagbo"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Lagos",
+      "addressCountry": "NG"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+2348100866322",
+      "contactType": "customer service",
+      "availableLanguage": ["English", "Yoruba"]
+    },
+    "sameAs": [
+      "https://youtube.com/@hmgconcepts",
+      "https://hmgacademy.pages.dev"
+    ]
+  }
+  </script>
+
+  <!-- FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <style>
+    /* ============================================================
+       DESIGN SYSTEM — HMG Concepts
+       Aesthetic: Editorial / Institutional / Warm Authority
+       ============================================================ */
+    :root {
+      --ink:       #0f1117;
+      --paper:     #faf8f4;
+      --cream:     #f3ede3;
+      --gold:      #c8943a;
+      --gold-lt:   #e8b96a;
+      --green:     #1a4d3a;
+      --green-lt:  #2d7a5a;
+      --white:     #ffffff;
+      --muted:     #6b6560;
+      --border:    #e0d8cc;
+
+      --ff-head:   'Playfair Display', Georgia, serif;
+      --ff-body:   'DM Sans', sans-serif;
+      --ff-mono:   'DM Mono', monospace;
+
+      --max:       1200px;
+      --radius:    4px;
+      --transition: 0.3s ease;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; font-size: 16px; }
+
+    body {
+      font-family: var(--ff-body);
+      background: var(--paper);
+      color: var(--ink);
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+
+    /* ---- UTILITY ---- */
+    .container { max-width: var(--max); margin: 0 auto; padding: 0 2rem; }
+    .section { padding: 5rem 0; }
+    .section--dark { background: var(--green); color: var(--white); }
+    .section--cream { background: var(--cream); }
+    .section--ink { background: var(--ink); color: var(--white); }
+
+    .tag {
+      display: inline-block;
+      font-family: var(--ff-mono);
+      font-size: 0.7rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--gold);
+      border: 1px solid var(--gold);
+      padding: 0.25rem 0.75rem;
+      border-radius: 2px;
+      margin-bottom: 1.25rem;
+    }
+
+    h1, h2, h3, h4 { font-family: var(--ff-head); line-height: 1.2; }
+    h1 { font-size: clamp(2.5rem, 6vw, 4.5rem); }
+    h2 { font-size: clamp(2rem, 4vw, 3rem); }
+    h3 { font-size: clamp(1.3rem, 2.5vw, 1.75rem); }
+    h4 { font-size: 1.1rem; }
+
+    p { margin-bottom: 1rem; color: inherit; opacity: 0.9; }
+    a { color: inherit; text-decoration: none; }
+
+    .btn {
+      display: inline-block;
+      padding: 0.85rem 2rem;
+      font-family: var(--ff-body);
+      font-weight: 600;
+      font-size: 0.9rem;
+      letter-spacing: 0.05em;
+      border-radius: var(--radius);
+      transition: var(--transition);
+      cursor: pointer;
+      border: none;
+    }
+    .btn--gold {
+      background: var(--gold);
+      color: var(--white);
+    }
+    .btn--gold:hover { background: var(--gold-lt); transform: translateY(-2px); }
+    .btn--outline {
+      background: transparent;
+      color: var(--white);
+      border: 2px solid var(--white);
+    }
+    .btn--outline:hover { background: var(--white); color: var(--ink); }
+    .btn--green {
+      background: var(--green);
+      color: var(--white);
+    }
+    .btn--green:hover { background: var(--green-lt); transform: translateY(-2px); }
+
+    /* ---- NAVIGATION ---- */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      background: rgba(250, 248, 244, 0.96);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--border);
+      padding: 0 2rem;
+      height: 68px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .nav__brand {
+      font-family: var(--ff-head);
+      font-size: 1.4rem;
+      font-weight: 900;
+      color: var(--ink);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .nav__brand span { color: var(--gold); }
+
+    .nav__links {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+    }
+    .nav__links a {
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: var(--muted);
+      letter-spacing: 0.03em;
+      transition: var(--transition);
+      padding-bottom: 2px;
+      border-bottom: 2px solid transparent;
+    }
+    .nav__links a:hover,
+    .nav__links a.active {
+      color: var(--ink);
+      border-bottom-color: var(--gold);
+    }
+
+    .nav__cta {
+      font-size: 0.8rem;
+      font-weight: 600;
+      background: var(--green);
+      color: var(--white);
+      padding: 0.5rem 1.25rem;
+      border-radius: var(--radius);
+      transition: var(--transition);
+    }
+    .nav__cta:hover { background: var(--green-lt); }
+
+    .nav__toggle {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      padding: 4px;
+    }
+    .nav__toggle span {
+      display: block;
+      width: 24px;
+      height: 2px;
+      background: var(--ink);
+      transition: var(--transition);
+    }
+
+    /* ---- PAGE SECTIONS (hidden by default) ---- */
+    .page { display: none; padding-top: 68px; }
+    .page.active { display: block; }
+
+    /* ============================================================
+       HOME PAGE
+       ============================================================ */
+    .hero {
+      min-height: calc(100vh - 68px);
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      gap: 4rem;
+      padding: 4rem 2rem;
+      max-width: var(--max);
+      margin: 0 auto;
+    }
+
+    .hero__content { animation: fadeUp 0.8s ease both; }
+    .hero__content h1 { margin-bottom: 1.5rem; }
+    .hero__content h1 em {
+      font-style: italic;
+      color: var(--gold);
+    }
+    .hero__content p {
+      font-size: 1.1rem;
+      color: var(--muted);
+      max-width: 480px;
+      margin-bottom: 2rem;
+    }
+    .hero__btns { display: flex; gap: 1rem; flex-wrap: wrap; }
+
+    .hero__visual {
+      animation: fadeUp 0.8s 0.2s ease both;
+      position: relative;
+    }
+    .hero__card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 2rem;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.08);
+    }
+    .hero__stat {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: 1rem 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .hero__stat:last-child { border-bottom: none; }
+    .hero__stat-num {
+      font-family: var(--ff-head);
+      font-size: 2rem;
+      font-weight: 900;
+      color: var(--gold);
+      min-width: 80px;
+    }
+    .hero__stat-label { font-size: 0.9rem; color: var(--muted); }
+    .hero__stat-label strong { display: block; color: var(--ink); font-size: 1rem; }
+
+    /* Subsidiaries strip */
+    .subsidiaries {
+      background: var(--green);
+      padding: 4rem 2rem;
+    }
+    .subsidiaries__inner {
+      max-width: var(--max);
+      margin: 0 auto;
+    }
+    .subsidiaries__head {
+      text-align: center;
+      margin-bottom: 3rem;
+      color: var(--white);
+    }
+    .subsidiaries__head p { color: rgba(255,255,255,0.7); }
+
+    .subsidiaries__grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+    }
+
+    .sub-card {
+      background: rgba(255,255,255,0.07);
+      border: 1px solid rgba(255,255,255,0.15);
+      border-radius: 8px;
+      padding: 2rem;
+      transition: var(--transition);
+      cursor: pointer;
+    }
+    .sub-card:hover {
+      background: rgba(255,255,255,0.12);
+      transform: translateY(-4px);
+    }
+    .sub-card__icon {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    .sub-card h3 {
+      color: var(--gold-lt);
+      margin-bottom: 0.75rem;
+      font-size: 1.3rem;
+    }
+    .sub-card p { color: rgba(255,255,255,0.75); font-size: 0.95rem; margin: 0; }
+
+    /* Mission strip */
+    .mission {
+      padding: 5rem 2rem;
+      background: var(--cream);
+    }
+    .mission__inner {
+      max-width: var(--max);
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+    }
+    .mission__quote {
+      font-family: var(--ff-head);
+      font-size: clamp(1.5rem, 3vw, 2.2rem);
+      font-style: italic;
+      line-height: 1.4;
+      color: var(--green);
+      border-left: 4px solid var(--gold);
+      padding-left: 1.5rem;
+    }
+    .mission__text h2 { margin-bottom: 1rem; }
+    .mission__text p { color: var(--muted); }
+
+    /* ============================================================
+       ABOUT PAGE
+       ============================================================ */
+    .page-hero {
+      background: var(--green);
+      color: var(--white);
+      padding: 5rem 2rem 4rem;
+      text-align: center;
+    }
+    .page-hero h1 { margin-bottom: 1rem; }
+    .page-hero p {
+      max-width: 600px;
+      margin: 0 auto;
+      color: rgba(255,255,255,0.8);
+      font-size: 1.1rem;
+    }
+
+    .about__story {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 5rem 2rem;
+    }
+    .about__story h2 { margin-bottom: 1.5rem; color: var(--green); }
+    .about__story p { color: var(--muted); font-size: 1.05rem; }
+    .about__story .highlight {
+      background: var(--cream);
+      border-left: 4px solid var(--gold);
+      padding: 1.5rem;
+      border-radius: 0 8px 8px 0;
+      margin: 2rem 0;
+      font-style: italic;
+      color: var(--ink);
+    }
+
+    .about__values {
+      background: var(--cream);
+      padding: 4rem 2rem;
+    }
+    .about__values-inner {
+      max-width: var(--max);
+      margin: 0 auto;
+    }
+    .about__values h2 { text-align: center; margin-bottom: 3rem; }
+    .values__grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+    }
+    .value-card {
+      background: var(--white);
+      padding: 2rem;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+    }
+    .value-card__num {
+      font-family: var(--ff-mono);
+      font-size: 0.75rem;
+      color: var(--gold);
+      letter-spacing: 0.1em;
+      margin-bottom: 0.5rem;
+    }
+    .value-card h3 { margin-bottom: 0.75rem; font-size: 1.2rem; }
+    .value-card p { color: var(--muted); font-size: 0.95rem; margin: 0; }
+
+    /* ============================================================
+       ACADEMY PAGE
+       ============================================================ */
+    .academy__intro {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 5rem 2rem 3rem;
+      text-align: center;
+    }
+    .academy__intro h2 { margin-bottom: 1rem; color: var(--green); }
+    .academy__intro p { color: var(--muted); font-size: 1.05rem; }
+
+    .academy__features {
+      background: var(--cream);
+      padding: 4rem 2rem;
+    }
+    .academy__features-inner {
+      max-width: var(--max);
+      margin: 0 auto;
+    }
+    .features__grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+    .feature-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 2rem;
+      display: flex;
+      gap: 1.25rem;
+      align-items: flex-start;
+    }
+    .feature-card__icon { font-size: 1.75rem; flex-shrink: 0; }
+    .feature-card h4 { margin-bottom: 0.5rem; }
+    .feature-card p { color: var(--muted); font-size: 0.9rem; margin: 0; }
+
+    .academy__subjects {
+      padding: 4rem 2rem;
+      max-width: var(--max);
+      margin: 0 auto;
+    }
+    .academy__subjects h2 { margin-bottom: 2rem; }
+    .subjects__grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1rem;
+    }
+    .subject-pill {
+      background: var(--cream);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 1rem;
+      text-align: center;
+      font-size: 0.9rem;
+      font-weight: 500;
+      transition: var(--transition);
+    }
+    .subject-pill:hover {
+      background: var(--green);
+      color: var(--white);
+      border-color: var(--green);
+    }
+
+    .academy__levels {
+      background: var(--green);
+      color: var(--white);
+      padding: 4rem 2rem;
+    }
+    .academy__levels-inner {
+      max-width: var(--max);
+      margin: 0 auto;
+    }
+    .levels__grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+    .level-card {
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.15);
+      border-radius: 8px;
+      padding: 1.75rem;
+    }
+    .level-card h3 { color: var(--gold-lt); margin-bottom: 0.5rem; }
+    .level-card p { color: rgba(255,255,255,0.75); font-size: 0.9rem; margin: 0; }
+
+    .academy__enrol {
+      padding: 5rem 2rem;
+      text-align: center;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    .academy__enrol h2 { margin-bottom: 1rem; }
+    .academy__enrol p { color: var(--muted); margin-bottom: 2rem; }
+
+    /* ============================================================
+       TECHNOLOGIES PAGE
+       ============================================================ */
+    .tech__intro {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 5rem 2rem 3rem;
+    }
+    .tech__intro h2 { margin-bottom: 1rem; color: var(--green); }
+    .tech__intro p { color: var(--muted); font-size: 1.05rem; }
+
+    .tech__services {
+      background: var(--cream);
+      padding: 4rem 2rem;
+    }
+    .tech__services-inner {
+      max-width: var(--max);
+      margin: 0 auto;
+    }
+    .services__grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+    .service-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 2rem;
+      transition: var(--transition);
+    }
+    .service-card:hover { box-shadow: 0 8px 30px rgba(0,0,0,0.08); transform: translateY(-3px); }
+    .service-card__icon { font-size: 2rem; margin-bottom: 1rem; }
+    .service-card h3 { margin-bottom: 0.75rem; font-size: 1.2rem; }
+    .service-card p { color: var(--muted); font-size: 0.9rem; margin: 0; }
+
+    .tech__stack {
+      padding: 4rem 2rem;
+      max-width: var(--max);
+      margin: 0 auto;
+    }
+    .tech__stack h2 { margin-bottom: 2rem; }
+    .stack__grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 1rem;
+    }
+    .stack-pill {
+      background: var(--ink);
+      color: var(--white);
+      border-radius: 6px;
+      padding: 0.75rem 1rem;
+      text-align: center;
+      font-family: var(--ff-mono);
+      font-size: 0.8rem;
+    }
+
+    /* ============================================================
+       MEDIA PAGE
+       ============================================================ */
+    .media__intro {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 5rem 2rem 3rem;
+    }
+    .media__intro h2 { margin-bottom: 1rem; color: var(--green); }
+    .media__intro p { color: var(--muted); font-size: 1.05rem; }
+
+    .media__channels {
+      background: var(--cream);
+      padding: 4rem 2rem;
+    }
+    .media__channels-inner {
+      max-width: var(--max);
+      margin: 0 auto;
+    }
+    .channels__grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+    .channel-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 2rem;
+      text-align: center;
+    }
+    .channel-card__icon { font-size: 2.5rem; margin-bottom: 1rem; }
+    .channel-card h3 { margin-bottom: 0.5rem; }
+    .channel-card p { color: var(--muted); font-size: 0.9rem; }
+    .channel-card a {
+      display: inline-block;
+      margin-top: 1rem;
+      color: var(--gold);
+      font-weight: 600;
+      font-size: 0.85rem;
+      border-bottom: 1px solid var(--gold);
+      transition: var(--transition);
+    }
+    .channel-card a:hover { color: var(--green); border-color: var(--green); }
+
+    /* ============================================================
+       VISIONER PAGE
+       ============================================================ */
+    .visioner__hero {
+      background: var(--ink);
+      color: var(--white);
+      padding: 5rem 2rem;
+    }
+    .visioner__hero-inner {
+      max-width: var(--max);
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+    }
+    .visioner__badge {
+      background: rgba(200,148,58,0.15);
+      border: 1px solid var(--gold);
+      border-radius: 8px;
+      padding: 2.5rem;
+    }
+    .visioner__badge h2 {
+      color: var(--gold-lt);
+      margin-bottom: 0.5rem;
+      font-size: 1.75rem;
+    }
+    .visioner__badge .role {
+      font-family: var(--ff-mono);
+      font-size: 0.75rem;
+      color: rgba(255,255,255,0.5);
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-bottom: 1.5rem;
+    }
+    .visioner__badge p {
+      color: rgba(255,255,255,0.8);
+      font-size: 0.95rem;
+    }
+
+    .visioner__content h2 { margin-bottom: 1rem; }
+    .visioner__content p { color: rgba(255,255,255,0.75); }
+
+    .visioner__story {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 5rem 2rem;
+    }
+    .visioner__story h2 { color: var(--green); margin-bottom: 1.5rem; }
+    .visioner__story p { color: var(--muted); font-size: 1.05rem; }
+
+    .visioner__skills {
+      background: var(--cream);
+      padding: 4rem 2rem;
+    }
+    .visioner__skills-inner {
+      max-width: var(--max);
+      margin: 0 auto;
+    }
+    .visioner__skills h2 { margin-bottom: 2rem; }
+    .skills__grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+    }
+    .skill-group h4 {
+      font-family: var(--ff-mono);
+      font-size: 0.75rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 1rem;
+    }
+    .skill-tags { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+    .skill-tag {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 0.35rem 0.85rem;
+      font-size: 0.85rem;
+      color: var(--ink);
+    }
+
+    .visioner__credentials {
+      padding: 4rem 2rem;
+      max-width: var(--max);
+      margin: 0 auto;
+    }
+    .visioner__credentials h2 { margin-bottom: 2rem; }
+    .credentials__list { display: flex; flex-direction: column; gap: 1rem; }
+    .credential-item {
+      display: flex;
+      gap: 1.5rem;
+      align-items: flex-start;
+      padding: 1.25rem;
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+    }
+    .credential-item__year {
+      font-family: var(--ff-mono);
+      font-size: 0.8rem;
+      color: var(--gold);
+      min-width: 50px;
+      padding-top: 3px;
+    }
+    .credential-item h4 { margin-bottom: 0.2rem; font-size: 1rem; }
+    .credential-item p { color: var(--muted); font-size: 0.85rem; margin: 0; }
+
+    /* ============================================================
+       CONTACT PAGE
+       ============================================================ */
+    .contact__intro {
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 5rem 2rem 3rem;
+      text-align: center;
+    }
+    .contact__intro h2 { margin-bottom: 1rem; color: var(--green); }
+    .contact__intro p { color: var(--muted); font-size: 1.05rem; }
+
+    .contact__grid {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 2rem 2rem 5rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      align-items: start;
+    }
+
+    .contact__channels { display: flex; flex-direction: column; gap: 1rem; }
+    .contact-item {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+      padding: 1.25rem;
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      transition: var(--transition);
+    }
+    .contact-item:hover { border-color: var(--gold); }
+    .contact-item__icon { font-size: 1.5rem; flex-shrink: 0; }
+    .contact-item__label {
+      font-family: var(--ff-mono);
+      font-size: 0.7rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+    .contact-item__value { font-weight: 600; font-size: 0.95rem; }
+
+    .contact__form {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 2rem;
+    }
+    .contact__form h3 { margin-bottom: 1.5rem; }
+    .form-group { margin-bottom: 1.25rem; }
+    .form-group label {
+      display: block;
+      font-size: 0.85rem;
+      font-weight: 500;
+      margin-bottom: 0.4rem;
+      color: var(--ink);
+    }
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      padding: 0.75rem 1rem;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      font-family: var(--ff-body);
+      font-size: 0.9rem;
+      background: var(--paper);
+      color: var(--ink);
+      transition: var(--transition);
+      outline: none;
+    }
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      border-color: var(--green);
+      box-shadow: 0 0 0 3px rgba(26,77,58,0.1);
+    }
+    .form-group textarea { resize: vertical; min-height: 120px; }
+
+    /* ============================================================
+       FOOTER
+       ============================================================ */
+    footer {
+      background: var(--ink);
+      color: var(--white);
+      padding: 3rem 2rem 1.5rem;
+    }
+    .footer__inner {
+      max-width: var(--max);
+      margin: 0 auto;
+    }
+    .footer__top {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 3rem;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+      margin-bottom: 1.5rem;
+    }
+    .footer__brand h3 {
+      font-family: var(--ff-head);
+      font-size: 1.3rem;
+      color: var(--gold-lt);
+      margin-bottom: 0.75rem;
+    }
+    .footer__brand p {
+      color: rgba(255,255,255,0.6);
+      font-size: 0.85rem;
+      line-height: 1.6;
+    }
+    .footer__col h4 {
+      font-size: 0.75rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--gold);
+      font-family: var(--ff-mono);
+      margin-bottom: 1rem;
+    }
+    .footer__col ul { list-style: none; }
+    .footer__col ul li { margin-bottom: 0.5rem; }
+    .footer__col ul li a {
+      color: rgba(255,255,255,0.6);
+      font-size: 0.85rem;
+      transition: var(--transition);
+    }
+    .footer__col ul li a:hover { color: var(--gold-lt); }
+
+    .footer__bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.8rem;
+      color: rgba(255,255,255,0.4);
+    }
+
+    /* ============================================================
+       ANIMATIONS
+       ============================================================ */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(24px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ============================================================
+       RESPONSIVE
+       ============================================================ */
+    @media (max-width: 900px) {
+      .nav__links, .nav__cta { display: none; }
+      .nav__toggle { display: flex; }
+
+      .nav__links.open {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 68px; left: 0; right: 0;
+        background: var(--paper);
+        padding: 1.5rem 2rem;
+        border-bottom: 1px solid var(--border);
+        gap: 1.25rem;
+        z-index: 99;
+      }
+      .nav__links.open a { font-size: 1rem; }
+
+      .hero { grid-template-columns: 1fr; gap: 2rem; min-height: auto; padding: 3rem 1.5rem; }
+      .hero__visual { display: none; }
+      .subsidiaries__grid { grid-template-columns: 1fr; }
+      .mission__inner { grid-template-columns: 1fr; gap: 2rem; }
+      .values__grid { grid-template-columns: 1fr; }
+      .features__grid { grid-template-columns: 1fr; }
+      .subjects__grid { grid-template-columns: repeat(2, 1fr); }
+      .levels__grid { grid-template-columns: 1fr; }
+      .services__grid { grid-template-columns: 1fr; }
+      .stack__grid { grid-template-columns: repeat(3, 1fr); }
+      .channels__grid { grid-template-columns: 1fr; }
+      .visioner__hero-inner { grid-template-columns: 1fr; }
+      .skills__grid { grid-template-columns: 1fr; }
+      .contact__grid { grid-template-columns: 1fr; }
+      .footer__top { grid-template-columns: 1fr 1fr; gap: 2rem; }
+    }
+
+    @media (max-width: 500px) {
+      .subjects__grid { grid-template-columns: 1fr 1fr; }
+      .stack__grid { grid-template-columns: repeat(2, 1fr); }
+      .footer__top { grid-template-columns: 1fr; }
+      .footer__bottom { flex-direction: column; gap: 0.5rem; text-align: center; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ============================================================
+       NAVIGATION
+       ============================================================ -->
+  <nav id="navbar">
+    <div class="nav__brand" onclick="showPage('home')" style="cursor:pointer">
+      HMG <span>Concepts</span>
+    </div>
+    <ul class="nav__links" id="navLinks">
+      <li><a href="#" onclick="showPage('home')" class="active" id="nav-home">Home</a></li>
+      <li><a href="#" onclick="showPage('about')" id="nav-about">About</a></li>
+      <li><a href="#" onclick="showPage('academy')" id="nav-academy">Academy</a></li>
+      <li><a href="#" onclick="showPage('technologies')" id="nav-technologies">Technologies</a></li>
+      <li><a href="#" onclick="showPage('media')" id="nav-media">Media</a></li>
+      <li><a href="#" onclick="showPage('visioner')" id="nav-visioner">The Visioner</a></li>
+    </ul>
+    <a href="#" onclick="showPage('contact')" class="nav__cta" id="nav-contact">Contact Us</a>
+    <div class="nav__toggle" onclick="toggleMenu()" id="menuToggle">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- ============================================================
+       HOME PAGE
+       ============================================================ -->
+  <div class="page active" id="page-home">
+
+    <section style="background: var(--paper);">
+      <div class="hero">
+        <div class="hero__content">
+          <span class="tag">Est. 2015 · Lagos, Nigeria</span>
+          <h1>Where <em>Education</em> Meets Innovation</h1>
+          <p>HMG Concepts is a Nigerian educational and technology brand built on one conviction: that every learner deserves access to quality, deliberate, and forward-looking education.</p>
+          <div class="hero__btns">
+            <a href="#" onclick="showPage('academy')" class="btn btn--green">Explore HMG Academy</a>
+            <a href="#" onclick="showPage('about')" class="btn btn--outline" style="color:var(--ink);border-color:var(--ink);">Our Story</a>
+          </div>
+        </div>
+        <div class="hero__visual">
+          <div class="hero__card">
+            <div class="hero__stat">
+              <div class="hero__stat-num">15+</div>
+              <div class="hero__stat-label">
+                <strong>Years of Teaching</strong>
+                Nursery · Primary · Secondary
+              </div>
+            </div>
+            <div class="hero__stat">
+              <div class="hero__stat-num">3</div>
+              <div class="hero__stat-label">
+                <strong>Subsidiaries</strong>
+                Academy · Technologies · Media
+              </div>
+            </div>
+            <div class="hero__stat">
+              <div class="hero__stat-num">2015</div>
+              <div class="hero__stat-label">
+                <strong>Founded</strong>
+                His Marvellous Grace Educational Consult
+              </div>
+            </div>
+            <div class="hero__stat">
+              <div class="hero__stat-num">100%</div>
+              <div class="hero__stat-label">
+                <strong>Virtual Learning</strong>
+                Accessible from anywhere in Nigeria
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="subsidiaries">
+      <div class="subsidiaries__inner">
+        <div class="subsidiaries__head">
+          <span class="tag" style="border-color:rgba(200,148,58,0.5);color:var(--gold-lt)">Three Pillars</span>
+          <h2>One Brand. Three Missions.</h2>
+          <p>Each subsidiary of HMG Concepts is built to solve a distinct problem in education and technology.</p>
+        </div>
+        <div class="subsidiaries__grid">
+          <div class="sub-card" onclick="showPage('academy')">
+            <div class="sub-card__icon">🎓</div>
+            <h3>HMG Academy</h3>
+            <p>A full-service strictly virtual learning institution with seasoned teachers covering all subjects and levels — from primary through secondary school and exam preparation.</p>
+          </div>
+          <div class="sub-card" onclick="showPage('technologies')">
+            <div class="sub-card__icon">💻</div>
+            <h3>HMG Technologies</h3>
+            <p>EdTech and data-driven solutions — including CBT systems, ML-powered student tools, and AI-augmented platforms built to solve real educational problems.</p>
+          </div>
+          <div class="sub-card" onclick="showPage('media')">
+            <div class="sub-card__icon">📢</div>
+            <h3>HMG Media</h3>
+            <p>Educational content creation, digital presence management, and community engagement — turning learning into a conversation, not a monologue.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mission">
+      <div class="mission__inner">
+        <div class="mission__quote">
+          "Learning Deliberately. Teaching Authentically."
+        </div>
+        <div class="mission__text">
+          <span class="tag">Our Philosophy</span>
+          <h2>Built on a Simple Truth</h2>
+          <p>HMG Concepts was born in 2015 from a frustration and a conviction. The frustration: that Nigerian students deserved better than what the system was offering. The conviction: that technology, deliberately applied, could close that gap.</p>
+          <p>Today we run a virtual school, build EdTech tools, and produce educational content — all rooted in that same founding conviction.</p>
+          <a href="#" onclick="showPage('about')" class="btn btn--gold" style="margin-top:1rem">Read Our Story</a>
+        </div>
+      </div>
+    </section>
+
+    <section style="background:var(--ink);padding:4rem 2rem;text-align:center;">
+      <div style="max-width:600px;margin:0 auto;">
+        <span class="tag" style="border-color:rgba(200,148,58,0.5);color:var(--gold-lt)">Enrolment Open</span>
+        <h2 style="color:var(--white);margin-bottom:1rem;">Ready to Learn Without Limits?</h2>
+        <p style="color:rgba(255,255,255,0.7);margin-bottom:2rem;">HMG Academy offers quality virtual schooling for Nigerian students at every level. Our teachers are seasoned. Our approach is deliberate.</p>
+        <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
+          <a href="#" onclick="showPage('academy')" class="btn btn--gold">Explore the Academy</a>
+          <a href="#" onclick="showPage('contact')" class="btn btn--outline">Get in Touch</a>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- ============================================================
+       ABOUT PAGE
+       ============================================================ -->
+  <div class="page" id="page-about">
+
+    <section class="page-hero">
+      <span class="tag" style="border-color:rgba(200,148,58,0.5);color:var(--gold-lt)">Est. 2015</span>
+      <h1>About HMG Concepts</h1>
+      <p>The story behind a Nigerian educational brand built on deliberate learning and authentic teaching.</p>
+    </section>
+
+    <div class="about__story">
+      <span class="tag">Our Origin</span>
+      <h2>Where It All Started</h2>
+      <p>HMG Concepts — full name, His Marvellous Grace Educational Consult — was founded in 2015 by Adewale Samson Adeagbo, a secondary school teacher with a burning question: why were Nigerian students being failed by a system that could be fixed?</p>
+      <p>The answer wasn't to complain. It was to build. So that's what he did.</p>
+      <div class="highlight">
+        "I always wanted to solve classroom problems with technology. That drive is what led me to study Computer Science Education — and it's what still drives every decision we make at HMG Concepts today."
+        <br/><br/>— Adewale Samson Adeagbo, Founder
+      </div>
+      <p>What began as a one-man tutoring operation has grown into a full brand with three subsidiaries: HMG Academy (virtual schooling), HMG Technologies (EdTech & data solutions), and HMG Media (content & digital presence). Through it all, the philosophy has never changed: <strong>Learning Deliberately. Teaching Authentically.</strong></p>
+      <p>Today HMG Concepts serves students across Lagos and Ogun State — and increasingly, anywhere in Nigeria with an internet connection. Our teachers are seasoned professionals. Our tools are built on real data. Our content is grounded in lived classroom experience.</p>
+    </div>
+
+    <section class="about__values">
+      <div class="about__values-inner">
+        <span class="tag">What We Stand For</span>
+        <h2>Our Core Values</h2>
+        <div class="values__grid">
+          <div class="value-card">
+            <div class="value-card__num">01</div>
+            <h3>Deliberate Learning</h3>
+            <p>We don't teach for passing exams alone. We teach for understanding — building students who can think, not just recall.</p>
+          </div>
+          <div class="value-card">
+            <div class="value-card__num">02</div>
+            <h3>Authentic Teaching</h3>
+            <p>Our teachers bring real experience, not just qualifications. Every lesson is grounded in what actually works in the classroom.</p>
+          </div>
+          <div class="value-card">
+            <div class="value-card__num">03</div>
+            <h3>Technology as a Tool</h3>
+            <p>We leverage technology deliberately — to expand access, improve outcomes, and solve problems that have long gone unsolved.</p>
+          </div>
+          <div class="value-card">
+            <div class="value-card__num">04</div>
+            <h3>Access for All</h3>
+            <p>Quality education should not be a privilege. HMG Academy is virtual precisely so that geography and circumstance are never barriers.</p>
+          </div>
+          <div class="value-card">
+            <div class="value-card__num">05</div>
+            <h3>Community Impact</h3>
+            <p>We build for Nigeria. Every tool, every lesson, every piece of content is made with the Nigerian learner in mind — their context, their challenges, their potential.</p>
+          </div>
+          <div class="value-card">
+            <div class="value-card__num">06</div>
+            <h3>Continuous Growth</h3>
+            <p>We practise what we preach. HMG Concepts is a learning organisation — always upskilling, always improving, always evolving.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section style="padding:4rem 2rem;text-align:center;">
+      <div style="max-width:600px;margin:0 auto;">
+        <h2 style="margin-bottom:1rem;">Want to Know the Person Behind HMG?</h2>
+        <p style="color:var(--muted);margin-bottom:2rem;">Meet Adewale Samson Adeagbo — educator, data scientist, and the Visioner behind everything HMG Concepts is building.</p>
+        <a href="#" onclick="showPage('visioner')" class="btn btn--green">Meet the Visioner</a>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- ============================================================
+       ACADEMY PAGE
+       ============================================================ -->
+  <div class="page" id="page-academy">
+
+    <section class="page-hero" style="background:var(--green)">
+      <span class="tag" style="border-color:rgba(200,148,58,0.5);color:var(--gold-lt)">Strictly Virtual</span>
+      <h1>HMG Academy</h1>
+      <p>A full-service virtual learning institution with seasoned teachers, covering all subjects and levels for Nigerian students.</p>
+    </section>
+
+    <div class="academy__intro">
+      <span class="tag">What We Offer</span>
+      <h2>Real School. Virtual Classroom.</h2>
+      <p>HMG Academy is not a tutoring service. It is a full educational institution — with a team of experienced teachers, structured curriculum, and comprehensive academic support — delivered entirely online.</p>
+      <p>Whether your child is in primary school, secondary school, or preparing for WAEC, NECO, or JAMB, HMG Academy has the right teacher and the right programme.</p>
+    </div>
+
+    <section class="academy__features">
+      <div class="academy__features-inner">
+        <span class="tag">Why HMG Academy</span>
+        <h2>What Makes Us Different</h2>
+        <div class="features__grid">
+          <div class="feature-card">
+            <div class="feature-card__icon">👩‍🏫</div>
+            <div>
+              <h4>Seasoned Teachers</h4>
+              <p>Our educators are experienced classroom professionals — not just subject-matter hobbyists. They know how to teach, not just what to teach.</p>
+            </div>
+          </div>
+          <div class="feature-card">
+            <div class="feature-card__icon">🌐</div>
+            <div>
+              <h4>100% Virtual</h4>
+              <p>Learn from anywhere in Nigeria. All you need is a device and an internet connection. No commute. No compromise on quality.</p>
+            </div>
+          </div>
+          <div class="feature-card">
+            <div class="feature-card__icon">📋</div>
+            <div>
+              <h4>Exam Registration Support</h4>
+              <p>We handle WAEC, NECO, GCE, and UTME registration — so students and parents don't have to navigate it alone.</p>
+            </div>
+          </div>
+          <div class="feature-card">
+            <div class="feature-card__icon">💡</div>
+            <div>
+              <h4>CBT Preparation</h4>
+              <p>Our CBT lab and question bank system prepares students for the digital exam environment — reducing exam-day anxiety significantly.</p>
+            </div>
+          </div>
+          <div class="feature-card">
+            <div class="feature-card__icon">🧭</div>
+            <div>
+              <h4>Student Counselling</h4>
+              <p>Academic and career counselling is built into our approach. We don't just teach subjects — we help students figure out their path.</p>
+            </div>
+          </div>
+          <div class="feature-card">
+            <div class="feature-card__icon">🏆</div>
+            <div>
+              <h4>Quiz & Competition Programmes</h4>
+              <p>Inter-school quiz competitions, debate, and an upcoming inter-school hackathon — because learning should stretch beyond the syllabus.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="academy__subjects">
+      <span class="tag">Curriculum</span>
+      <h2>Subjects We Cover</h2>
+      <div class="subjects__grid">
+        <div class="subject-pill">Mathematics</div>
+        <div class="subject-pill">Further Mathematics</div>
+        <div class="subject-pill">English Language</div>
+        <div class="subject-pill">Physics</div>
+        <div class="subject-pill">Chemistry</div>
+        <div class="subject-pill">Biology</div>
+        <div class="subject-pill">Economics</div>
+        <div class="subject-pill">Government</div>
+        <div class="subject-pill">Literature</div>
+        <div class="subject-pill">Civic Education</div>
+        <div class="subject-pill">Computer Science</div>
+        <div class="subject-pill">Agricultural Science</div>
+        <div class="subject-pill">Technical Drawing</div>
+        <div class="subject-pill">Financial Accounting</div>
+        <div class="subject-pill">Commerce</div>
+        <div class="subject-pill">Geography</div>
+      </div>
+    </section>
+
+    <section class="academy__levels">
+      <div class="academy__levels-inner">
+        <span class="tag" style="border-color:rgba(200,148,58,0.5);color:var(--gold-lt)">All Levels</span>
+        <h2>Who We Teach</h2>
+        <div class="levels__grid">
+          <div class="level-card">
+            <h3>Primary School</h3>
+            <p>Strong foundational education in core subjects — building numeracy, literacy, and critical thinking from the earliest stage.</p>
+          </div>
+          <div class="level-card">
+            <h3>Junior Secondary (JSS 1–3)</h3>
+            <p>Comprehensive coverage of all JSS subjects, with consistent assessment to track and improve student progress.</p>
+          </div>
+          <div class="level-card">
+            <h3>Senior Secondary (SSS 1–3)</h3>
+            <p>Science, Arts, and Commercial streams — taught by specialists who understand both the subject and the exam.</p>
+          </div>
+          <div class="level-card">
+            <h3>WAEC / NECO / GCE Prep</h3>
+            <p>Targeted revision, past question drills, and mock exams — giving students the best possible chance at distinction.</p>
+          </div>
+          <div class="level-card">
+            <h3>JAMB / UTME Prep</h3>
+            <p>Subject-specific and CBT-format preparation — because knowing the content is only half the battle.</p>
+          </div>
+          <div class="level-card">
+            <h3>Admission Processing</h3>
+            <p>End-to-end support for Post-UTME, Direct Entry, and university admission — from application to acceptance.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="academy__enrol">
+      <span class="tag">Get Started</span>
+      <h2>Ready to Enrol?</h2>
+      <p>Reach out to us today and let's find the right programme for your child. Our team is ready to walk you through everything — no pressure, no confusion.</p>
+      <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
+        <a href="https://wa.me/2348100866322" target="_blank" class="btn btn--green">Chat on WhatsApp</a>
+        <a href="#" onclick="showPage('contact')" class="btn btn--outline" style="color:var(--ink);border-color:var(--ink);">Send an Enquiry</a>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- ============================================================
+       TECHNOLOGIES PAGE
+       ============================================================ -->
+  <div class="page" id="page-technologies">
+
+    <section class="page-hero" style="background:var(--ink)">
+      <span class="tag" style="border-color:rgba(200,148,58,0.5);color:var(--gold-lt)">EdTech & Data</span>
+      <h1>HMG Technologies</h1>
+      <p>Data-driven tools and AI-augmented solutions built to solve real problems in education and beyond.</p>
+    </section>
+
+    <div class="tech__intro">
+      <span class="tag">What We Build</span>
+      <h2>Technology That Teaches Itself to be Useful</h2>
+      <p>HMG Technologies is the innovation arm of HMG Concepts. We don't build technology for its own sake — we build it because a problem in the classroom or a gap in the data demands a solution.</p>
+      <p>Led by Adewale Samson Adeagbo — a data scientist and educator — HMG Technologies produces ML-powered tools, CBT systems, and AI-augmented platforms that are already being used by real students and institutions.</p>
+    </div>
+
+    <section class="tech__services">
+      <div class="tech__services-inner">
+        <span class="tag">Our Solutions</span>
+        <h2>What We Offer</h2>
+        <div class="services__grid">
+          <div class="service-card">
+            <div class="service-card__icon">📝</div>
+            <h3>CBT Systems</h3>
+            <p>Custom Computer-Based Testing platforms for schools and institutions — including teacher portals, student portals, and question bank management. Our CBT Pro system is already live and in active use.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-card__icon">🤖</div>
+            <h3>ML-Powered Student Tools</h3>
+            <p>Predictive tools that identify at-risk students, track performance patterns, and generate personalised study plans — bringing data science into the classroom in a practical way.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-card__icon">📊</div>
+            <h3>Data Analysis & Dashboards</h3>
+            <p>Custom data analysis, visualisation, and reporting for educational institutions — turning raw student data into clear, actionable insights for teachers and administrators.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-card__icon">🏫</div>
+            <h3>CBT Lab Setup</h3>
+            <p>End-to-end setup of Computer-Based Testing labs for secondary schools — including hardware configuration, software deployment, and staff training.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-card__icon">🎓</div>
+            <h3>Digital Skill Empowerment</h3>
+            <p>Workshops and training programmes that build digital literacy among students, teachers, and school administrators — preparing communities for the technology-driven economy.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-card__icon">🔗</div>
+            <h3>EdTech Partnerships</h3>
+            <p>We collaborate with schools, NGOs, and institutions looking to integrate technology into their educational delivery — from consultation through full implementation.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="tech__stack">
+      <span class="tag">Our Technical Stack</span>
+      <h2>Built With</h2>
+      <div class="stack__grid">
+        <div class="stack-pill">Python</div>
+        <div class="stack-pill">Pandas</div>
+        <div class="stack-pill">Scikit-learn</div>
+        <div class="stack-pill">NumPy</div>
+        <div class="stack-pill">Matplotlib</div>
+        <div class="stack-pill">Seaborn</div>
+        <div class="stack-pill">Power BI</div>
+        <div class="stack-pill">Tableau</div>
+        <div class="stack-pill">SQL</div>
+        <div class="stack-pill">Streamlit</div>
+        <div class="stack-pill">GitHub</div>
+        <div class="stack-pill">Supabase</div>
+        <div class="stack-pill">Excel</div>
+        <div class="stack-pill">Google Sheets</div>
+        <div class="stack-pill">AI Tools</div>
+      </div>
+    </section>
+
+    <section style="background:var(--cream);padding:4rem 2rem;text-align:center;">
+      <div style="max-width:600px;margin:0 auto;">
+        <span class="tag">Partner With Us</span>
+        <h2>Have an EdTech Problem to Solve?</h2>
+        <p style="color:var(--muted);margin-bottom:2rem;">Whether you're a school, an NGO, or an institution looking for data-driven educational solutions — we'd like to hear from you.</p>
+        <a href="#" onclick="showPage('contact')" class="btn btn--green">Start a Conversation</a>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- ============================================================
+       MEDIA PAGE
+       ============================================================ -->
+  <div class="page" id="page-media">
+
+    <section class="page-hero" style="background:var(--gold);color:var(--ink)">
+      <span class="tag" style="border-color:rgba(15,17,23,0.3);color:var(--ink)">Content & Community</span>
+      <h1 style="color:var(--ink)">HMG Media</h1>
+      <p style="color:rgba(15,17,23,0.75)">Educational content that educates, inspires, and builds community — turning learning into a living conversation.</p>
+    </section>
+
+    <div class="media__intro">
+      <span class="tag">What We Do</span>
+      <h2>Education Beyond the Classroom</h2>
+      <p>HMG Media is the content and community arm of HMG Concepts. We believe that education doesn't end when the lesson does — it continues in conversations, in content, and in community.</p>
+      <p>Through YouTube, social media, and digital publications, HMG Media shares insights on learning, teaching, EdTech, and data science — rooted in the real experiences of a practitioner who has spent 15+ years in Nigerian classrooms.</p>
+    </div>
+
+    <section class="media__channels">
+      <div class="media__channels-inner">
+        <span class="tag">Our Channels</span>
+        <h2>Where to Find Us</h2>
+        <div class="channels__grid">
+          <div class="channel-card">
+            <div class="channel-card__icon">📺</div>
+            <h3>YouTube</h3>
+            <p>Educational videos, tutorials, and insights on learning, teaching, and technology in the Nigerian context.</p>
+            <a href="https://youtube.com/@hmgconcepts" target="_blank">Visit Channel →</a>
+          </div>
+          <div class="channel-card">
+            <div class="channel-card__icon">📘</div>
+            <h3>Facebook</h3>
+            <p>Community updates, educational tips, student success stories, and programme announcements from HMG Concepts.</p>
+            <a href="#" target="_blank">Follow Us →</a>
+          </div>
+          <div class="channel-card">
+            <div class="channel-card__icon">📸</div>
+            <h3>Instagram</h3>
+            <p>Visual storytelling — from classroom moments to data science insights, told in the HMG voice.</p>
+            <a href="#" target="_blank">Follow Us →</a>
+          </div>
+          <div class="channel-card">
+            <div class="channel-card__icon">💼</div>
+            <h3>LinkedIn</h3>
+            <p>Professional insights, EdTech commentary, and updates from Adewale Samson Adeagbo on data science and education.</p>
+            <a href="https://linkedin.com/in/adewalesamsonadeagbo" target="_blank">Connect →</a>
+          </div>
+          <div class="channel-card">
+            <div class="channel-card__icon">🐦</div>
+            <h3>X (Twitter)</h3>
+            <p>Quick insights, learning tips, and real-time commentary on education and technology in Nigeria.</p>
+            <a href="#" target="_blank">Follow Us →</a>
+          </div>
+          <div class="channel-card">
+            <div class="channel-card__icon">💬</div>
+            <h3>WhatsApp Community</h3>
+            <p>Join the HMG learning community for updates, resources, and direct access to our team and programmes.</p>
+            <a href="https://wa.me/2348100866322" target="_blank">Join Now →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section style="background:var(--ink);padding:4rem 2rem;text-align:center;">
+      <div style="max-width:600px;margin:0 auto;">
+        <span class="tag" style="border-color:rgba(200,148,58,0.5);color:var(--gold-lt)">Collaborate</span>
+        <h2 style="color:var(--white);margin-bottom:1rem;">Want to Partner on Content?</h2>
+        <p style="color:rgba(255,255,255,0.7);margin-bottom:2rem;">We're open to content collaborations with schools, EdTech brands, and educational organisations across Nigeria.</p>
+        <a href="#" onclick="showPage('contact')" class="btn btn--gold">Get in Touch</a>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- ============================================================
+       VISIONER PAGE
+       ============================================================ -->
+  <div class="page" id="page-visioner">
+
+    <section class="visioner__hero">
+      <div class="visioner__hero-inner">
+        <div class="visioner__content">
+          <span class="tag" style="border-color:rgba(200,148,58,0.5);color:var(--gold-lt)">Leadership</span>
+          <h2 style="color:var(--white);margin-bottom:1rem;">The Person Behind HMG Concepts</h2>
+          <p>Adewale Samson Adeagbo is an educator who became a data scientist — and a data scientist who never stopped teaching. He founded HMG Concepts in 2015, and has spent nearly two decades proving that the best technologists are often the ones who understand people first.</p>
+          <p>His headline says it plainly: <em style="color:var(--gold-lt)">"I Don't Just Teach Data — I Do It."</em></p>
+        </div>
+        <div class="visioner__badge">
+          <h2>Adewale Samson Adeagbo</h2>
+          <div class="role">Visioner & Director · Data Lead · Educator</div>
+          <p>B.Sc.(Ed) Computer Science Education, Lagos State University (2023)</p>
+          <p style="margin-top:0.75rem;">15+ years classroom teaching · Lagos & Ogun State, Nigeria</p>
+          <p style="margin-top:0.75rem;">Founder, HMG Concepts (2015)</p>
+          <div style="margin-top:1.5rem;display:flex;gap:0.75rem;flex-wrap:wrap;">
+            <a href="https://cssadewale.pages.dev" target="_blank" class="btn btn--gold" style="font-size:0.8rem;padding:0.6rem 1.25rem;">Portfolio</a>
+            <a href="https://github.com/cssadewale" target="_blank" class="btn btn--outline" style="font-size:0.8rem;padding:0.6rem 1.25rem;">GitHub</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="visioner__story">
+      <span class="tag">The Journey</span>
+      <h2>From Blackboard to Data Science</h2>
+      <p>Adewale's teaching career began in 2009. For 15+ years, he has taught Mathematics, Further Mathematics, Physics, and Chemistry across nursery, primary, and secondary schools in Lagos and Ogun State. That classroom time wasn't just teaching — it was research. He was watching, every day, what worked and what didn't.</p>
+      <p>The turning point came in late 2024 when he joined the Federal Government's 3MTT programme. Something that had always been a conviction — that data and technology could solve classroom problems — finally found its technical language. He went deep: machine learning, Python, data analysis, model deployment.</p>
+      <p>Today he has 12 deployed ML and EdTech projects on GitHub, is actively enrolled in three advanced upskilling programmes, and serves as a SkillBuild Hub Ambassador. His data science work — covering insurance fraud detection, delivery delay prediction, student risk profiling, and more — is built on the same clarity he developed teaching quadratic equations to teenagers.</p>
+      <div style="background:var(--cream);border-left:4px solid var(--gold);padding:1.5rem;border-radius:0 8px 8px 0;margin:2rem 0;font-style:italic;color:var(--ink);">
+        "Data science taught me that if you can think through a problem clearly, you can find a path to a solution — even in unfamiliar territory."
+        <br/><br/>— Adewale Samson Adeagbo
+      </div>
+      <p>He continues to teach at God of Seed Academy and tutors across multiple platforms. Not because he has to — but because the classroom is where everything he knows was tested and proven.</p>
+    </div>
+
+    <section class="visioner__skills">
+      <div class="visioner__skills-inner">
+        <span class="tag">Technical Arsenal</span>
+        <h2>What He Works With</h2>
+        <div class="skills__grid">
+          <div class="skill-group">
+            <h4>Data Science & ML</h4>
+            <div class="skill-tags">
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">Pandas</span>
+              <span class="skill-tag">NumPy</span>
+              <span class="skill-tag">Scikit-learn</span>
+              <span class="skill-tag">Matplotlib</span>
+              <span class="skill-tag">Seaborn</span>
+              <span class="skill-tag">SHAP</span>
+              <span class="skill-tag">SMOTE</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <h4>Data & Analytics</h4>
+            <div class="skill-tags">
+              <span class="skill-tag">SQL</span>
+              <span class="skill-tag">Excel (Advanced)</span>
+              <span class="skill-tag">Google Sheets</span>
+              <span class="skill-tag">Power BI</span>
+              <span class="skill-tag">Tableau</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <h4>Deployment & Dev</h4>
+            <div class="skill-tags">
+              <span class="skill-tag">Streamlit</span>
+              <span class="skill-tag">Git / GitHub</span>
+              <span class="skill-tag">Cloudflare Pages</span>
+              <span class="skill-tag">Supabase</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <h4>EdTech & Teaching</h4>
+            <div class="skill-tags">
+              <span class="skill-tag">Zoom</span>
+              <span class="skill-tag">Google Classroom</span>
+              <span class="skill-tag">MS Teams</span>
+              <span class="skill-tag">CBT Systems</span>
+              <span class="skill-tag">Curriculum Design</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="visioner__credentials">
+      <span class="tag">Credentials & Training</span>
+      <h2>Learning Never Stopped</h2>
+      <div class="credentials__list">
+        <div class="credential-item">
+          <div class="credential-item__year">2025</div>
+          <div>
+            <h4>DSN × Google.org DeepTech_Ready — DSML Track, Cohort 3</h4>
+            <p>Deep learning, NLP, and advanced machine learning — currently ongoing</p>
+          </div>
+        </div>
+        <div class="credential-item">
+          <div class="credential-item__year">2025</div>
+          <div>
+            <h4>WorldQuant University — Applied Data Science Lab</h4>
+            <p>Applied data science with real-world projects — ongoing</p>
+          </div>
+        </div>
+        <div class="credential-item">
+          <div class="credential-item__year">2025</div>
+          <div>
+            <h4>Kodecamp Cohort 6 — ML Core Track</h4>
+            <p>Machine learning engineering — ongoing</p>
+          </div>
+        </div>
+        <div class="credential-item">
+          <div class="credential-item__year">2026</div>
+          <div>
+            <h4>SkillBuild Hub Ambassador — Cohort 4 (April–June 2026)</h4>
+            <p>IBM SkillsBuild Ambassador Programme</p>
+          </div>
+        </div>
+        <div class="credential-item">
+          <div class="credential-item__year">2024</div>
+          <div>
+            <h4>3MTT — Federal Government of Nigeria</h4>
+            <p>The turning point. Technology training that unlocked a new chapter.</p>
+          </div>
+        </div>
+        <div class="credential-item">
+          <div class="credential-item__year">2023</div>
+          <div>
+            <h4>B.Sc.(Ed) Computer Science Education — Lagos State University</h4>
+            <p>First class foundation in both computer science and pedagogy</p>
+          </div>
+        </div>
+        <div class="credential-item">
+          <div class="credential-item__year">2009</div>
+          <div>
+            <h4>Teaching Career Begins</h4>
+            <p>15+ years across nursery, primary, and secondary schools in Lagos and Ogun State — currently at secondary level only</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section style="padding:4rem 2rem;text-align:center;">
+      <div style="max-width:600px;margin:0 auto;">
+        <h2 style="margin-bottom:1rem;">Want to Collaborate or Connect?</h2>
+        <p style="color:var(--muted);margin-bottom:2rem;">For data science collaborations, EdTech partnerships, speaking opportunities, or media enquiries — reach out directly.</p>
+        <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
+          <a href="mailto:buildingmyictcareer@gmail.com" class="btn btn--green">Email Adewale</a>
+          <a href="https://cssadewale.pages.dev" target="_blank" class="btn btn--outline" style="color:var(--ink);border-color:var(--ink);">View Portfolio</a>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- ============================================================
+       CONTACT PAGE
+       ============================================================ -->
+  <div class="page" id="page-contact">
+
+    <section class="page-hero" style="background:var(--green)">
+      <span class="tag" style="border-color:rgba(200,148,58,0.5);color:var(--gold-lt)">We're Here</span>
+      <h1>Get in Touch</h1>
+      <p>Whether you're a parent, a student, a recruiter, or a potential partner — we want to hear from you.</p>
+    </section>
+
+    <div class="contact__intro">
+      <span class="tag">Contact</span>
+      <h2>Let's Start a Conversation</h2>
+      <p>Reach out via any of the channels below or fill in the form and we'll get back to you promptly.</p>
+    </div>
+
+    <div class="contact__grid">
+      <div class="contact__channels">
+        <div class="contact-item">
+          <div class="contact-item__icon">📱</div>
+          <div>
+            <div class="contact-item__label">WhatsApp / Hotline</div>
+            <div class="contact-item__value">+234 810 086 6322</div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-item__icon">📞</div>
+          <div>
+            <div class="contact-item__label">Phone</div>
+            <div class="contact-item__value">+234 907 790 7677</div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-item__icon">✉️</div>
+          <div>
+            <div class="contact-item__label">Brand Email</div>
+            <div class="contact-item__value">hismarvellousgrace@gmail.com</div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-item__icon">💻</div>
+          <div>
+            <div class="contact-item__label">Tech / Partnerships</div>
+            <div class="contact-item__value">buildingmyictcareer@gmail.com</div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-item__icon">📺</div>
+          <div>
+            <div class="contact-item__label">YouTube</div>
+            <div class="contact-item__value">youtube.com/@hmgconcepts</div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-item__icon">📍</div>
+          <div>
+            <div class="contact-item__label">Location</div>
+            <div class="contact-item__value">Lagos / Ogun State, Nigeria</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact__form">
+        <h3>Send an Enquiry</h3>
+        <div class="form-group">
+          <label>Full Name</label>
+          <input type="text" placeholder="Your full name" />
+        </div>
+        <div class="form-group">
+          <label>Email Address</label>
+          <input type="email" placeholder="your@email.com" />
+        </div>
+        <div class="form-group">
+          <label>Phone Number</label>
+          <input type="tel" placeholder="+234..." />
+        </div>
+        <div class="form-group">
+          <label>I am a...</label>
+          <select>
+            <option value="">Select your role</option>
+            <option>Parent / Guardian</option>
+            <option>Student</option>
+            <option>School / Institution</option>
+            <option>Recruiter / Employer</option>
+            <option>EdTech Partner</option>
+            <option>Sponsor / Grant Body</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Message</label>
+          <textarea placeholder="Tell us what you need..."></textarea>
+        </div>
+        <a href="https://wa.me/2348100866322" target="_blank" class="btn btn--green" style="width:100%;text-align:center;display:block;">
+          Send via WhatsApp
+        </a>
+        <p style="text-align:center;font-size:0.8rem;color:var(--muted);margin-top:0.75rem;">
+          Or email us directly at hismarvellousgrace@gmail.com
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ============================================================
+       FOOTER (shown on all pages)
+       ============================================================ -->
+  <footer>
+    <div class="footer__inner">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <h3>HMG Concepts</h3>
+          <p>His Marvellous Grace Educational Consult. A Nigerian educational and technology brand founded in 2015. Learning Deliberately. Teaching Authentically.</p>
+          <p style="margin-top:0.75rem;">Lagos / Ogun State, Nigeria</p>
+        </div>
+        <div class="footer__col">
+          <h4>Subsidiaries</h4>
+          <ul>
+            <li><a href="#" onclick="showPage('academy')">HMG Academy</a></li>
+            <li><a href="#" onclick="showPage('technologies')">HMG Technologies</a></li>
+            <li><a href="#" onclick="showPage('media')">HMG Media</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#" onclick="showPage('about')">About Us</a></li>
+            <li><a href="#" onclick="showPage('visioner')">The Visioner</a></li>
+            <li><a href="#" onclick="showPage('contact')">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="https://youtube.com/@hmgconcepts" target="_blank">YouTube</a></li>
+            <li><a href="https://hmgacademy.pages.dev" target="_blank">HMG Academy Site</a></li>
+            <li><a href="https://cssadewale.pages.dev" target="_blank">Adewale's Portfolio</a></li>
+            <li><a href="https://github.com/cssadewale" target="_blank">GitHub</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© 2025 HMG Concepts · His Marvellous Grace Educational Consult · Nigeria</span>
+        <span>Founded by Adewale Samson Adeagbo</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================================================
+       JAVASCRIPT
+       ============================================================ -->
+  <script>
+    function showPage(id) {
+      // Hide all pages
+      document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+      // Show target
+      document.getElementById('page-' + id).classList.add('active');
+      // Update nav active state
+      document.querySelectorAll('.nav__links a').forEach(a => a.classList.remove('active'));
+      const navEl = document.getElementById('nav-' + id);
+      if (navEl) navEl.classList.add('active');
+      // Scroll to top
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      // Close mobile menu
+      document.getElementById('navLinks').classList.remove('open');
+      return false;
+    }
+
+    function toggleMenu() {
+      document.getElementById('navLinks').classList.toggle('open');
+    }
+
+    // Navbar scroll shadow
+    window.addEventListener('scroll', () => {
+      const nav = document.getElementById('navbar');
+      nav.style.boxShadow = window.scrollY > 10
+        ? '0 2px 20px rgba(0,0,0,0.08)'
+        : 'none';
+    });
+  </script>
+
+</body>
+</html>
