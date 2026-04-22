@@ -1,0 +1,103 @@
+{
+  "meta": {
+    "siteName": "HMG Concepts",
+    "fullName": "His Marvellous Grace Educational Consult",
+    "tagline": "Learning Deliberately. Teaching Authentically.",
+    "founded": "2015",
+    "location": "Lagos / Ogun State, Nigeria",
+    "logo": "",
+    "primaryColor": "#1a4d3a",
+    "accentColor": "#c8943a",
+    "lastUpdated": ""
+  },
+  "contact": {
+    "whatsapp": "+2348100866322",
+    "hotline": "+2348100866322",
+    "phone": "+2349077907677",
+    "brandEmail": "hismarvellousgrace@gmail.com",
+    "techEmail": "buildingmyictcareer@gmail.com",
+    "officialEmail": "adeagboadewalesamson@gmail.com"
+  },
+  "social": {
+    "youtube": "https://youtube.com/@hmgconcepts",
+    "facebook": "",
+    "instagram": "",
+    "twitter": "",
+    "linkedin": "https://linkedin.com/in/adewalesamsonadeagbo",
+    "academySite": "https://hmgacademy.pages.dev",
+    "portfolio": "https://cssadewale.pages.dev",
+    "github": "https://github.com/cssadewale"
+  },
+  "home": {
+    "heroHeadline": "Where Education Meets Innovation",
+    "heroSubtext": "HMG Concepts is a Nigerian educational and technology brand built on one conviction: that every learner deserves access to quality, deliberate, and forward-looking education.",
+    "missionQuote": "Learning Deliberately. Teaching Authentically.",
+    "missionBody": "HMG Concepts was born in 2015 from a frustration and a conviction. The frustration: that Nigerian students deserved better than what the system was offering. The conviction: that technology, deliberately applied, could close that gap.",
+    "stats": [
+      { "number": "15+", "label": "Years of Teaching", "sub": "Nursery · Primary · Secondary" },
+      { "number": "3", "label": "Subsidiaries", "sub": "Academy · Technologies · Media" },
+      { "number": "2015", "label": "Founded", "sub": "His Marvellous Grace Educational Consult" },
+      { "number": "100%", "label": "Virtual Learning", "sub": "Accessible from anywhere in Nigeria" }
+    ]
+  },
+  "about": {
+    "originTitle": "Where It All Started",
+    "originBody": "HMG Concepts — full name, His Marvellous Grace Educational Consult — was founded in 2015 by Adewale Samson Adeagbo, a secondary school teacher with a burning question: why were Nigerian students being failed by a system that could be fixed?\n\nThe answer wasn't to complain. It was to build. So that's what he did.",
+    "founderQuote": "I always wanted to solve classroom problems with technology. That drive is what led me to study Computer Science Education — and it's what still drives every decision we make at HMG Concepts today.",
+    "storyBody": "What began as a one-man tutoring operation has grown into a full brand with three subsidiaries: HMG Academy (virtual schooling), HMG Technologies (EdTech & data solutions), and HMG Media (content & digital presence). Through it all, the philosophy has never changed: Learning Deliberately. Teaching Authentically.",
+    "values": [
+      { "num": "01", "title": "Deliberate Learning", "body": "We don't teach for passing exams alone. We teach for understanding — building students who can think, not just recall." },
+      { "num": "02", "title": "Authentic Teaching", "body": "Our teachers bring real experience, not just qualifications. Every lesson is grounded in what actually works in the classroom." },
+      { "num": "03", "title": "Technology as a Tool", "body": "We leverage technology deliberately — to expand access, improve outcomes, and solve problems that have long gone unsolved." },
+      { "num": "04", "title": "Access for All", "body": "Quality education should not be a privilege. HMG Academy is virtual precisely so that geography and circumstance are never barriers." },
+      { "num": "05", "title": "Community Impact", "body": "We build for Nigeria. Every tool, every lesson, every piece of content is made with the Nigerian learner in mind." },
+      { "num": "06", "title": "Continuous Growth", "body": "We practise what we preach. HMG Concepts is a learning organisation — always upskilling, always improving, always evolving." }
+    ]
+  },
+  "academy": {
+    "intro": "HMG Academy is not a tutoring service. It is a full educational institution — with a team of experienced teachers, structured curriculum, and comprehensive academic support — delivered entirely online.",
+    "subjects": [
+      "Mathematics", "Further Mathematics", "English Language", "Physics",
+      "Chemistry", "Biology", "Economics", "Government", "Literature",
+      "Civic Education", "Computer Science", "Agricultural Science",
+      "Technical Drawing", "Financial Accounting", "Commerce", "Geography"
+    ],
+    "levels": [
+      { "title": "Primary School", "body": "Strong foundational education in core subjects — building numeracy, literacy, and critical thinking from the earliest stage." },
+      { "title": "Junior Secondary (JSS 1–3)", "body": "Comprehensive coverage of all JSS subjects, with consistent assessment to track and improve student progress." },
+      { "title": "Senior Secondary (SSS 1–3)", "body": "Science, Arts, and Commercial streams — taught by specialists who understand both the subject and the exam." },
+      { "title": "WAEC / NECO / GCE Prep", "body": "Targeted revision, past question drills, and mock exams — giving students the best possible chance at distinction." },
+      { "title": "JAMB / UTME Prep", "body": "Subject-specific and CBT-format preparation — because knowing the content is only half the battle." },
+      { "title": "Admission Processing", "body": "End-to-end support for Post-UTME, Direct Entry, and university admission — from application to acceptance." }
+    ],
+    "features": [
+      { "icon": "👩‍🏫", "title": "Seasoned Teachers", "body": "Our educators are experienced classroom professionals — not just subject-matter hobbyists." },
+      { "icon": "🌐", "title": "100% Virtual", "body": "Learn from anywhere in Nigeria. All you need is a device and an internet connection." },
+      { "icon": "📋", "title": "Exam Registration Support", "body": "We handle WAEC, NECO, GCE, and UTME registration — so students and parents don't navigate it alone." },
+      { "icon": "💡", "title": "CBT Preparation", "body": "Our CBT lab and question bank system prepares students for the digital exam environment." },
+      { "icon": "🧭", "title": "Student Counselling", "body": "Academic and career counselling is built into our approach. We help students figure out their path." },
+      { "icon": "🏆", "title": "Quiz & Competition Programmes", "body": "Inter-school quiz competitions, debate, and an upcoming inter-school hackathon." }
+    ]
+  },
+  "team": [
+    {
+      "id": "1",
+      "name": "Adewale Samson Adeagbo",
+      "role": "Visioner & Director · Data Lead",
+      "bio": "Educator, data scientist, and founder of HMG Concepts. 15+ years of teaching experience across Lagos and Ogun State.",
+      "photo": "",
+      "linkedin": "https://linkedin.com/in/adewalesamsonadeagbo",
+      "email": "buildingmyictcareer@gmail.com"
+    }
+  ],
+  "pages": [
+    { "id": "home", "title": "Home", "slug": "home", "visible": true, "builtin": true },
+    { "id": "about", "title": "About", "slug": "about", "visible": true, "builtin": true },
+    { "id": "academy", "title": "Academy", "slug": "academy", "visible": true, "builtin": true },
+    { "id": "technologies", "title": "Technologies", "slug": "technologies", "visible": true, "builtin": true },
+    { "id": "media", "title": "Media", "slug": "media", "visible": true, "builtin": true },
+    { "id": "visioner", "title": "The Visioner", "slug": "visioner", "visible": true, "builtin": true },
+    { "id": "contact", "title": "Contact", "slug": "contact", "visible": true, "builtin": true }
+  ],
+  "customPages": []
+}
