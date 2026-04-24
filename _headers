@@ -2,8 +2,6 @@
   X-Robots-Tag: index, follow
   X-Frame-Options: DENY
   X-Content-Type-Options: nosniff
-  Referrer-Policy: strict-origin-when-cross-origin
-  Cache-Control: public, max-age=3600
 
-/admin.html
-  X-Robots-Tag: noindex, nofollow
+https://hmgconcepts.pages.dev/*
+  X-Robots-Tag: index, follow
