@@ -1,0 +1,25 @@
+{
+  "name": "HMG Concepts — Education · Technology · Media · Gospel",
+  "short_name": "HMG Concepts",
+  "description": "His Marvellous Grace Educational Consult — a Nigerian education and technology brand with four arms: Academy, Technologies, Media, and Gospel.",
+  "lang": "en",
+  "dir": "ltr",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#070b22",
+  "theme_color": "#070b22",
+  "categories": ["education", "business", "productivity"],
+  "icons": [
+    { "src": "assets/icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "assets/icons/icon-256.png", "sizes": "256x256", "type": "image/png" },
+    { "src": "assets/icons/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "assets/icons/maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "shortcuts": [
+    { "name": "Ecosystem", "url": "./ecosystem.html" },
+    { "name": "The Visioner", "url": "./founder.html" },
+    { "name": "Contact", "url": "./contact.html" }
+  ]
+}

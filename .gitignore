@@ -1,0 +1,11 @@
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+*.log
+.vscode/
+.idea/
+
+# Local build / archive artifacts (the live site is plain static files)
+*.zip
+node_modules/
+.cache/
